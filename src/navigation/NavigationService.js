@@ -1,0 +1,36 @@
+import { NavigationActions, StackActions } from 'react-navigation';
+const config = {};
+export function setNavigator(nav) {
+  if (nav) {
+    config.navigator = nav;
+  }
+}
+export function navigate(routeName, params) {
+  if (config.navigator && routeName) {
+    let action = NavigationActions.navigate({ routeName, params });
+    config.navigator.dispatch(action);
+  }
+}
+export function goBack() {
+  if (config.navigator) {
+    let action = NavigationActions.back({});
+    config.navigator.dispatch(action);
+  }
+}
+
+let navigator;
+
+export function setTopLevelNavigator(navigatorRef) {
+  navigator = navigatorRef;
+}
+
+export function navigateToProductPage(params) {
+  setTimeout(() => {
+    navigator.dispatch(
+      StackActions.reset({
+        index: 2,
+        actions: [NavigationActions.navigate({ routeName: 'Home' })],
+      }),
+    );
+  }, 1000);
+}

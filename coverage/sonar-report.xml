@@ -1,0 +1,27 @@
+<testExecutions version="1">
+<file path="src/modules/HomeRoot/Dashboard/reducer/__tests__/index.spec.js">
+<testCase name="reducer Should return intial state" duration="2" />
+<testCase name="reducer Should return GET_DETAILS" duration="0" />
+<testCase name="reducer Should return GET_DETAILS_RESPONSE" duration="1" />
+<testCase name="reducer Should return GET_DETAILS_ERROR" duration="3" />
+</file>
+<file path="src/modules/HomeRoot/Dashboard/selectors/__tests__/index.spec.js">
+<testCase name="Selectors should accept the state and return the reducer" duration="2" />
+<testCase name="Selectors should accept the state and return the getDetails" duration="1" />
+</file>
+<file path="src/modules/HomeRoot/Dashboard/api/__tests__/index.spec.js">
+<testCase name="Access DashboardApi Api should response success with getUserDataCall" duration="4" />
+</file>
+<file path="src/modules/HomeRoot/Dashboard/screen/__tests__/Dashboard.spec.js">
+<testCase name="Dashboard view render should render correctly" duration="155" />
+</file>
+<file path="src/modules/HomeRoot/Dashboard/screen/__tests__/Container.spec.js">
+<testCase name="Container should render" duration="11" />
+</file>
+<file path="src/modules/LoginRoot/LoginPage/__tests__/Login.spec.js">
+<testCase name="Login view render should render correctly" duration="17" />
+</file>
+<file path="src/modules/LoginRoot/LoginPage/__tests__/Container.spec.js">
+<testCase name="Container should render" duration="8" />
+</file>
+</testExecutions>

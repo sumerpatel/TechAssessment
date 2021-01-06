@@ -1,0 +1,23 @@
+module.exports = {
+  root: true,
+  extends: '@react-native-community',
+  rules: {
+    semi: 2,
+    experimentalDecorators: true,
+    allowJs: true,
+    allowSyntheticDefaultImports: true,
+    esModuleInterop: true,
+    isolatedModules: false,
+    jsx: 'react',
+    lib: ['es5', 'es6', 'dom'],
+    moduleResolution: 'node',
+    noEmit: true,
+    strict: true,
+    module: 'CommonJS',
+    target: 'ES2016',
+    noUnusedLocals: true,
+    preserveSymlinks: true,
+  },
+  include: ['**/*.js', '**/*.jsx'],
+  exclude: ['node_modules', 'babel.config.js', 'metro.config.js'],
+};
